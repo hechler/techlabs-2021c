@@ -14,4 +14,20 @@ L.tileLayer('https://api.mapbox.com/styles/v1/kohomb/cksatep89alqd18o4f6mz873q/t
 //Adding Marker: 
 
 const marker = L.marker([50.93748790878701, 6.881883433967217]).addTo(mymap)
+
 marker.bindPopup('Stadtwaldgarten')
+//hiermit geben wir dem marker den wir erstellt haben ein popup, das ist aber noch nicht geöffnet 
+
+marker.on('mouseover', function (e) {
+    this.openPopup();
+    //hiermit öffnen wird es dann wenn wir drüber gehen 
+});
+
+marker.on('mouseout', function (e) {
+    this.closePopup();
+    //hier wird es geschlossen beim Weggehen 
+});
+
+// marker.bindPopup('Stadtwaldgarten2').openPopup();
+//hiermit hätten wir einen ein neues Popup erstellt welches das erste ja überschrieben hätte da es danach kommt, zudem wäre es mit .openPopup() von Anfang an geöffnet 
+
