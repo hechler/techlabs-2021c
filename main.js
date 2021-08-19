@@ -11,6 +11,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/kohomb/cksatep89alqd18o4f6mz873q/t
     accessToken: apiKey
 }).addTo(mymap);
 
+
 //Adding Marker: 
 
 const marker = L.marker([50.93748790878701, 6.881883433967217]).addTo(mymap)
@@ -31,3 +32,8 @@ marker.on('mouseout', function (e) {
 // marker.bindPopup('Stadtwaldgarten2').openPopup();
 //hiermit hätten wir einen ein neues Popup erstellt welches das erste ja überschrieben hätte da es danach kommt, zudem wäre es mit .openPopup() von Anfang an geöffnet 
 
+function saySomething(p) {
+    alert("Teste hier nur ein paar Sachen")
+}
+
+marker.on('click', saySomething)
