@@ -4,6 +4,24 @@ const countrySchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
+    },
+    einwohner: {
+        type: Number
+    },
+    währung: {
+        type: String
+    },
+    hauptstadt: {
+        type: String
+    },
+    techies: {
+        type: String
+    },
+    visum: {
+        type: Boolean
+    },
+    warnung: {
+        type: Boolean
     }
 })
 
