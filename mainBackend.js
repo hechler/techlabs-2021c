@@ -20,10 +20,11 @@ mongoose.connect('mongodb://localhost:27017/Länder', { useNewUrlParser: true, u
 
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
+server.use(express.static('static'));
 
 
 server.get('/', (req, res) => {
-    res.send("Startseite")
+    res.sendFile('./Karte.html', { root: path.join(__dirname, '/') })
 })
 
 server.get('/countries', async (req, res) => {
@@ -31,8 +32,11 @@ server.get('/countries', async (req, res) => {
     res.render('Index', { countries })
 })
 
-server.get('/:name', async (req, res) => {
+server.get('/country/:name', async (req, res) => {
     const country = await Country.findOne({ name: req.params.name })
+    if (country === null) {
+        return
+    }
     res.render('Land', { country })
 })
 

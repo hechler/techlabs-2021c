@@ -15,15 +15,28 @@ const countrySchema = new mongoose.Schema({
         type: String
     },
     techies: {
-        type: String
+        type: Number
     },
     visum: {
         type: Boolean
     },
     warnung: {
         type: Boolean
+    },
+    highlights: {
+        type: String
+    },
+    wikipedia: {
+        type: String
+    },
+    bilder: {
+        type: String
     }
 })
+
+
+
+
 
 
 const Country = mongoose.model('Countrie', countrySchema)
