@@ -41,13 +41,20 @@ L.tileLayer('https://api.mapbox.com/styles/v1/kohomb/cksatep89alqd18o4f6mz873q/t
 function moreInfo(e) {
     L.popup()
         .setLatLng(e.latlng)
-        .setContent("<h1>weitere Infos folgen</h1>")
+        .setContent("<h3>weitere Infos folgen</h3>")
         .openOn(mymap)
 }
 
 mymap.on('click', moreInfo)
 
-
+const DEpopUp = function customPopup(e) {
+    return `<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/220px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png" alt="" style = "width: 100px; height: 100px" >
+    <h2 style = "text-align: left; color: blue">Deutschland</h2>
+    <p>Hier kommt Text hin und zwar neuer</p>
+    <a href="http://localhost:3000/country/Deutschland">Mehr Infos</a>
+    </div>`
+}
 
 const geoJsonDeutschland =
 {
@@ -61,16 +68,16 @@ const Deutschland = L.geoJson(geoJsonDeutschland, {
         }
     }
 }).addTo(mymap)
-Deutschland.bindPopup('Deutschland', {
-    closeButton: false
+Deutschland.bindPopup(DEpopUp, {
+    closeButton: true
 })
 
 Deutschland.on('mouseover', function (e) {
     this.openPopup()
 })
-Deutschland.on('mouseout', function (e) {
-    this.closePopup()
-})
+// Deutschland.on('mouseout', function (e) {
+//     this.closePopup()
+// })
 
 
 

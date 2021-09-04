@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/Länder', { useNewUrlParser: true, u
 
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
-server.use(express.static('static'));
+server.use(express.static(__dirname + '/static'));
 
 
 server.get('/', (req, res) => {
