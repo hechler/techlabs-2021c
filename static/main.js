@@ -4,7 +4,7 @@ const apiKey = 'pk.eyJ1IjoiaWxiZTIxIiwiYSI6ImNrcmhsbW90ZjBrbnEycHBnZ21lbGp2a3oif
 
 const mymap = L.map('map', {
     zoomControl: false
-}).setView([36.90451958873619, 8.447538830806325], 2.5);
+}).setView([36.90451958873619, 8.447538830806325], 2);
 //ZoomControl ist eine options (siehe docs) welche man meist mit den geschweiften Klammern einbaut; Habe hier das Zoom Zeichen +- rausgenommen
 //setView kann man theoretisch üerball benutzen um wieder zu einem Punkt zu gelangen (vllt wenn man auf ein Land klickt dann machen wir es so, dass das Land dann mittig erscheint)
 
