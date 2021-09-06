@@ -3,6 +3,7 @@ const server = express()
 const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override')
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 
 const Country = require('./models/country')
@@ -33,11 +34,10 @@ server.get('/countries', async (req, res) => {
 })
 
 server.get('/country/:name', async (req, res) => {
-    const country = await Country.findOne({ name: req.params.name })
-    if (country === null) {
-        return
-    }
-    res.render('Land', { country })
+    fetch(`https://restcountries.eu/rest/v2/name/${req.params.name}`)
+        .then(res => res.json())
+        .then(country => { return res.render('Land', { country }) })
+
 })
 
 
