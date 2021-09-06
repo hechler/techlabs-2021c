@@ -77,10 +77,7 @@ Deutschland.bindPopup(DEpopUp, {
 
 Deutschland.on('mouseover', function (e) {
     this.openPopup()
-})
-// Deutschland.on('mouseout', function (e) {
-//     this.closePopup()
-// })
+});
 
 const geoJsonDänemark =
 {
@@ -100,10 +97,6 @@ Dänemark.bindPopup('Dänemark')
 
 Dänemark.on('mouseover', function (e) {
     this.openPopup()
-})
-
-Dänemark.on('mouseout', function (e) {
-    this.closePopup()
 })
 
 
