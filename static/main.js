@@ -50,8 +50,10 @@ mymap.on("click", moreInfo);
 
 const DEpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/220px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png" alt="" style = "width: 150px; height: 100px" >
-    <h2 style = "text-align: left; color: black">Germany</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/220px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png" alt="" style = "width: 9em; height: 6em" > 
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Germany</h4>
     </div>
     <div>
     Language(s): German</br>
@@ -60,7 +62,7 @@ const DEpopUp = function customPopup(e) {
     Population: 83.155.031</br>
     Currency: Euro </br>
     Techlabs Location: Düsseldorf </br>
-    <a href="http://localhost:3000/country/Deutschland">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Deutschland" >Mehr Infos</a>
     </div>`;
 };
 
@@ -94,8 +96,10 @@ const geoJsonDänemark =
 }
 const DÄpopUp = function customPopup(e) {
     return `<div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1200px-Flag_of_Denmark.svg.png" alt="" style = "width: 100px; height: 100px" >
-      <h2 style = "text-align: left; color: black">Denmark</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1200px-Flag_of_Denmark.svg.png" alt="" style = "width: 9em; height: 6em" >
+      </br>
+      </br>
+      <h4 style = "text-align: left; color: black">Denmark</h4>
       </div>
       <div>
       Language(s): Danish</br>
@@ -104,7 +108,7 @@ const DÄpopUp = function customPopup(e) {
       Population: 5.850.189[</br>
       Currency: Danish krone </br>
       Techlabs location: Copenhagen </br>
-      <a href="http://localhost:3000/country/Dänemark">Mehr Infos</a>
+      <a href="http://localhost:3000/country/Danmark">Mehr Infos</a>
       </div>`;
 };
 
@@ -128,8 +132,10 @@ Dänemark.on("mouseover", function (e) {
 
 const SPpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="" style = "width: 150px; height: 100px" >
-    <h2 style = "text-align: left; color: black">Spain</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="" style = "width: 9em; height: 6em" >
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Spain</h4>
     </div>
     <div>
     Language(s): Spanish</br>
@@ -138,7 +144,7 @@ const SPpopUp = function customPopup(e) {
     Population: 47.450.795</br>
     Currency: Euro </br>
     Techlabs Location: Barcelona </br>
-    <a href="http://localhost:3000/country/Spanien">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Spain">Mehr Infos</a>
     </div>`;
 };
 
@@ -168,8 +174,10 @@ Spanien.on("mouseover", function (e) {
 
 const ENpopUp = function customPopup(e) {
     return `<div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1200px-Flag_of_England.svg.png" alt="" style = "width: 100px; height: 100px" >
-      <h2 style = "text-align: left; color: black">England</h2>
+      <img src="https://www.fixefete.de/media/image/product/7157/lg/england-fahne-englische-flagge.jpg" alt="" style = "width: 9em; height: 6em" >
+      </br>
+      </br>
+      <h4 style = "text-align: left; color: black">England</h4>
       </div>
       <div>
       Language(s): English</br>
@@ -178,7 +186,7 @@ const ENpopUp = function customPopup(e) {
       Population: 56.286.961</br>
       Currency: Pound sterling </br>
       Techlabs location: London </br>
-      <a href="http://localhost:3000/country/England">Mehr Infos</a>
+      <a href="http://localhost:3000/country/Great%20Britain">Mehr Infos</a>
       </div>`;
 };
 
@@ -207,8 +215,10 @@ England.on("mouseover", function (e) {
 
 const SCpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" alt="" style = "width: 150px; height: 100px" >
-    <h2 style = "text-align: left; color: black">Sweden</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" alt="" style = "width: 9em; height: 6em" >
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Sweden</h4>
     </div>
     <div>
     Language(s): Swedish</br>
@@ -217,7 +227,7 @@ const SCpopUp = function customPopup(e) {
     Population: 10.402.070</br>
     Currency: Real </br>
     Techlabs Location: Swedish krona </br>
-    <a href="http://localhost:3000/country/Schweden">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Sweden">Mehr Infos</a>
     </div>`;
 };
 
@@ -245,8 +255,10 @@ Schweden.on("mouseover", function (e) {
 
 const POpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png" alt="" style = "width: 150px; height: 100px" >
-    <h2 style = "text-align: left; color: black">Portugal</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png" alt="" style = "width: 9em; height: 6em" >
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Portugal</h4>
     </div>
     <div>
     Language(s): Portuguese</br>
@@ -255,7 +267,7 @@ const POpopUp = function customPopup(e) {
     Population: 10.347.892</br>
     Currency: Euro </br>
     Techlabs Location: Lisbon </br>
-    <a href="http://localhost:3000/country/Portugal">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Portuguese">Mehr Infos</a>
     </div>`;
 };
 
@@ -284,17 +296,19 @@ Portugal.on("mouseover", function (e) {
 
 const BRpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="" style = "width: 150px; height: 100px" >
-    <h2 style = "text-align: left; color: black">Brasil</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="" style = "width: 9em; height: 6em" >
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Brasil</h4>
     </div>
     <div>
-    Language(s): German</br>
+    Language(s): Portuguese</br>
     Capital: Brasília</br>
     Area: 8.515.767 km <sup>2</sup> </br>
     Population: 210.147.125</br>
     Currency: Real </br>
     Techlabs Location: Curitiba </br>
-    <a href="http://localhost:3000/country/Brasilien">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Brazil">Mehr Infos</a>
     </div>`;
 };
 
@@ -322,8 +336,10 @@ Brasilien.on("mouseover", function (e) {
 
 const NIpopUp = function customPopup(e) {
     return `<div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png" alt="" style = "width: 100px; height: 50px" >
-    <h2 style = "text-align: left; color: black">Netherlands</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png" alt="" style = "width: 9em; height: 6em" >
+    </br>
+    </br>
+    <h4 style = "text-align: left; color: black">Netherlands</h4>
     </div>
     <div>
     Language(s): Dutch</br>
@@ -332,7 +348,7 @@ const NIpopUp = function customPopup(e) {
     Population: 17.633.400</br>
     Currency: Euro </br>
     Techlabs Location: Amsterdam </br>
-    <a href="http://localhost:3000/country/Niederlande">Mehr Infos</a>
+    <a href="http://localhost:3000/country/Netherlands">Mehr Infos</a>
     </div>`;
 };
 
