@@ -8,15 +8,15 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 
 const Country = require('./models/country')
 
-mongoose.connect('mongodb://localhost:27017/Länder', { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log("Mongo connection open")
-    })
-    .catch(err => {
-        console.log("Mongo connection error")
-        console.log(err)
-    });
-//Mongodb auf default server integriert mit Datenbank "Länder"
+// mongoose.connect('mongodb://localhost:27017/Länder', { useNewUrlParser: true, useUnifiedTopology: true })
+//     .then(() => {
+//         console.log("Mongo connection open")
+//     })
+//     .catch(err => {
+//         console.log("Mongo connection error")
+//         console.log(err)
+//     });
+// //Mongodb auf default server integriert mit Datenbank "Länder"
 
 
 server.set('views', path.join(__dirname, 'views'));
