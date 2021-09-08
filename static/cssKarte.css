@@ -11,10 +11,9 @@ body {
 }
 
 #map {
-  margin: 3em;
-  margin-top: 0px;
-  height: 70vh;
-  width: 95%;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
+  height: 85vh;
 }
 
 .footer-dark {
@@ -91,7 +90,7 @@ body {
   text-align: center;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-  margin: 0 8px;
+  margin: -100px 8px;
   color: #fff;
   opacity: 0.75;
 }
@@ -107,4 +106,18 @@ body {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0;
+}
+
+.navbar.navbar-expand-md.navbar-dark.bg-dark.static-top {
+  color: #ffffff;
+  background-color: #E8305C !important;
+  text-align: right;
+}
+
+.nav-item {
+  padding-right: 3em;
+}
+
+.nav-link.active:hover {
+  color: #E8305C;
 }

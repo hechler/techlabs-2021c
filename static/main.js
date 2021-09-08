@@ -11,7 +11,7 @@ L.tileLayer(
     "https://api.mapbox.com/styles/v1/kohomb/cksatep89alqd18o4f6mz873q/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia29ob21iIiwiYSI6ImNrczNmaWp4eDBtdzgyb3BmenJqaHRhZHAifQ.9xNK9NSQkEDTV_bjTZfuzQ",
     {
         maxZoom: 6,
-        minZoom: 2.5,
+        minZoom: 1.5,
         id: "mapbox/streets-v11",
         tileSize: 512,
         zoomOffset: -1,
@@ -42,7 +42,7 @@ L.tileLayer(
 function moreInfo(e) {
     L.popup()
         .setLatLng(e.latlng)
-        .setContent("<h3>weitere Infos folgen</h3>")
+        .setContent("<h6>weitere Infos folgen</h6>")
         .openOn(mymap);
 }
 
