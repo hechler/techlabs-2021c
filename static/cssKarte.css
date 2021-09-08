@@ -20,11 +20,12 @@ body {
   padding: 3vh;
   color: #ffffff;
   background-color: #E8305C;
+  margin-top: -10px;
+  margin-bottom: -50px;
 }
 
 .footer-dark h3 {
   margin-top: 0;
-  margin-bottom: 12px;
   font-weight: bold;
   font-size: 16px;
 }
