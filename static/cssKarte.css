@@ -119,6 +119,10 @@ body {
   padding-right: 3em;
 }
 
-.nav-link.active:hover {
-  color: #E8305C;
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #d6d6d6 !important;
 }
