@@ -15,8 +15,8 @@ server.get('/', (req, res) => {
 
 server.get('/country/:name', async (req, res) => {
     let land = await fetch(`https://restcountries.eu/rest/v2/name/${req.params.name}`)
-    let data = await fetch(`https://www.reisewarnung.net/api?country=${req.params.name}`)
-    let returnObject = { country: await land.json(), data: await data.json() }
+    let reise = await fetch(`https://www.reisewarnung.net/api?country=${req.params.name}`)
+    let returnObject = { country: await land.json(), reise: await reise.json() }
     res.render('Land', { returnObject })
 })
 

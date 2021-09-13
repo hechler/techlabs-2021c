@@ -26,20 +26,22 @@ body {
 
 #main {
     margin: 20px;
+    margin-top: 5px;
 }
 
 #headerOne {
     color: #000000;
-    display: inline;
+    margin-bottom: 25px;
+    padding-left: 0.1em;
 }
 
 #flag {
-    height: 8em;
-    width: 12em;
+    height: 10em;
+    width: 15em;
 }
 
 #countryHeader {
-    margin: 3em;
+    margin: 1em;
     margin-left: 0;
 }
 
@@ -148,4 +150,9 @@ body {
 
 .nav-link:hover {
     color: #d6d6d6 !important;
+}
+
+#paragraphFacts {
+    font-size: 20px;
+    margin-bottom: 1em;
 }

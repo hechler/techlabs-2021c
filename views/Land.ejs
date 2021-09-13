@@ -41,31 +41,33 @@
 
     <!-- Main content -->
     <div id="main">
+
         <div id="countryHeader">
-            <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
             <h1 id="headerOne">
                 <%= returnObject.country[0].name %>
             </h1>
+            <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
         </div>
 
 
         <div id="facts">
-            <h3> Generel facts above <%= returnObject.country[0].name %>
+            <h3> General facts about <%= returnObject.country[0].name %>
             </h3>
-
-            <p>
-                The capital of <%= returnObject.country[0].name %>
-                    is called <%= returnObject.country[0].capital %>. <%= returnObject.country[0].name %>
-                            belongs to <%= returnObject.country[0].region %>. To the country belongs an area of
-                                <%= returnObject.country[0].area %> square kilometres
-                                    where <%= returnObject.country[0].population %> people live while speaking most of
-                                        the time <%= returnObject.country[0].languages[0].name %>.
-                                            In <%= returnObject.country[0].name %> the current currency is
-                                                <%= returnObject.country[0].currencies[0].name %>
-                                                    (<%= returnObject.country[0].currencies[0].symbol %>).
+            <br>
+            <p id="paragraphFacts">
+                <%= returnObject.country[0].name %> belongs to <%= returnObject.country[0].region %> and has a land area
+                        of
+                        over <%= returnObject.country[0].area %> square
+                            kilometers. <%= returnObject.country[0].population %> people live here, many of them
+                                in the capital <%= returnObject.country[0].capital %>. The
+                                    national language is <%= returnObject.country[0].languages[0].name %> and the
+                                        generally accepted currency
+                                        is
+                                        <%= returnObject.country[0].currencies[0].name %>
+                                            (<%= returnObject.country[0].currencies[0].symbol %>).
             </p>
         </div>
-        <a href="/" id="backToCard">Zurück zur Karte</a>
+        <a href="/" id="backToCard">Back to map</a>
     </div>
 
     <!-- Bootstrap footer: -->

@@ -83,7 +83,7 @@ const DÄpopUp = function customPopup(e) {
       Language(s): Danish</br>
       Capital: Copenhagen</br>
       Area: 42.933  km <sup>2</sup> </br>
-      Population: 5.850.189[</br>
+      Population: 5.850.189</br>
       Currency: Danish krone </br>
       Techlabs location: Copenhagen </br>
       <a href="http://localhost:3000/country/Danmark">Mehr Infos</a>
@@ -277,7 +277,7 @@ const BRpopUp = function customPopup(e) {
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="" style = "width: 9em; height: 6em" >
     </br>
     </br>
-    <h4 style = "text-align: left; color: black">Brasil</h4>
+    <h4 style = "text-align: left; color: black">Brazil</h4>
     </div>
     <div>
     Language(s): Portuguese</br>
