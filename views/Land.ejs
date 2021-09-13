@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/cssLänder.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="/cssLänder.css" rel="stylesheet" type="text/css">
     <title>
     </title>
 </head>
@@ -42,13 +42,29 @@
     <!-- Main content -->
     <div id="main">
         <div id="countryHeader">
-            <img src="<%= country[0].flag %>" alt="" id="flag">
+            <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
             <h1 id="headerOne">
-                <%= country[0].name %>
+                <%= returnObject.country[0].name %>
             </h1>
         </div>
 
 
+        <div id="facts">
+            <h3> Generel facts above <%= returnObject.country[0].name %>
+            </h3>
+
+            <p>
+                The capital of <%= returnObject.country[0].name %>
+                    is called <%= returnObject.country[0].capital %>. <%= returnObject.country[0].name %>
+                            belongs to <%= returnObject.country[0].region %>. To the country belongs an area of
+                                <%= returnObject.country[0].area %> square kilometres
+                                    where <%= returnObject.country[0].population %> people live while speaking most of
+                                        the time <%= returnObject.country[0].languages[0].name %>.
+                                            In <%= returnObject.country[0].name %> the current currency is
+                                                <%= returnObject.country[0].currencies[0].name %>
+                                                    (<%= returnObject.country[0].currencies[0].symbol %>).
+            </p>
+        </div>
         <a href="/" id="backToCard">Zurück zur Karte</a>
     </div>
 

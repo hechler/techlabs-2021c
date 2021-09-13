@@ -4,8 +4,6 @@ const apiKey =
 const mymap = L.map("map", {
     zoomControl: false,
 }).setView([36.90451958873619, 8.447538830806325], 2.5);
-//ZoomControl ist eine options (siehe docs) welche man meist mit den geschweiften Klammern einbaut; Habe hier das Zoom Zeichen +- rausgenommen
-//setView kann man theoretisch üerball benutzen um wieder zu einem Punkt zu gelangen (vllt wenn man auf ein Land klickt dann machen wir es so, dass das Land dann mittig erscheint)
 
 L.tileLayer(
     "https://api.mapbox.com/styles/v1/kohomb/cksatep89alqd18o4f6mz873q/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia29ob21iIiwiYSI6ImNrczNmaWp4eDBtdzgyb3BmenJqaHRhZHAifQ.9xNK9NSQkEDTV_bjTZfuzQ",
@@ -18,26 +16,6 @@ L.tileLayer(
         accessToken: apiKey,
     }
 ).addTo(mymap);
-
-// //Adding Marker:
-
-// const Stadtwaldgarten = L.marker([50.93748790878701, 6.881883433967217]).addTo(mymap)
-
-// Stadtwaldgarten.bindPopup('Stadtwaldgarten')
-// //hiermit geben wir dem marker den wir erstellt haben ein popup, das ist aber noch nicht geöffnet
-
-// Stadtwaldgarten.on('mouseover', function (e) {
-//     this.openPopup();
-//     //hiermit öffnen wird es dann wenn wir drüber gehen
-// });
-
-// Stadtwaldgarten.on('mouseout', function (e) {
-//     this.closePopup();
-//     //hier wird es geschlossen beim Weggehen
-// });
-
-// // marker.bindPopup('Stadtwaldgarten2').openPopup();
-// //hiermit hätten wir einen ein neues Popup erstellt welches das erste ja überschrieben hätte da es danach kommt, zudem wäre es mit .openPopup() von Anfang an geöffnet
 
 function moreInfo(e) {
     L.popup()
@@ -373,4 +351,3 @@ Niederlande.bindPopup(NIpopUp, {
 Niederlande.on("mouseover", function (e) {
     this.openPopup();
 });
-

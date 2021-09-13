@@ -1,43 +1,23 @@
 const express = require('express')
 const server = express()
 const path = require('path');
-const mongoose = require('mongoose');
-const methodOverride = require('method-override')
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
-
-
-const Country = require('./models/country')
-
-// mongoose.connect('mongodb://localhost:27017/Länder', { useNewUrlParser: true, useUnifiedTopology: true })
-//     .then(() => {
-//         console.log("Mongo connection open")
-//     })
-//     .catch(err => {
-//         console.log("Mongo connection error")
-//         console.log(err)
-//     });
-// //Mongodb auf default server integriert mit Datenbank "Länder"
-
 
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(express.static(__dirname + '/static'));
 
 
+
 server.get('/', (req, res) => {
     res.sendFile('./Karte.html', { root: path.join(__dirname, '/') })
 })
 
-server.get('/countries', async (req, res) => {
-    const countries = await Country.find({})
-    res.render('Index', { countries })
-})
-
 server.get('/country/:name', async (req, res) => {
-    fetch(`https://restcountries.eu/rest/v2/name/${req.params.name}`)
-        .then(res => res.json())
-        .then(country => { return res.render('Land', { country }) })
-
+    let land = await fetch(`https://restcountries.eu/rest/v2/name/${req.params.name}`)
+    let data = await fetch(`https://www.reisewarnung.net/api?country=${req.params.name}`)
+    let returnObject = { country: await land.json(), data: await data.json() }
+    res.render('Land', { returnObject })
 })
 
 
