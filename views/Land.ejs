@@ -62,8 +62,8 @@
                         of
                         over <%= returnObject.country[0].area %> square
                             kilometers. <%= returnObject.country[0].population %> people live here, many of them
-                                in the capital <%= returnObject.country[0].capital %>. The
-                                    national language is <%= returnObject.country[0].languages[0].name %> and the
+                                in the capital <%= returnObject.country[0].capital %>. <%=
+                                        returnObject.country[0].languages[0].name %> is the national language and the
                                         generally accepted currency
                                         is
                                         <%= returnObject.country[0].currencies[0].name %>
@@ -74,7 +74,7 @@
                 <img src="<%= returnObject.picture.results[4].urls.small %>" alt="" class="pics" id="apiPicTwo">
             </div>
         </div>
-        <a href="/" id="backToCard">Back to map</a>
+        <a href="/" id="backToCard">Back to the map</a>
     </div>
 
     <!-- Bootstrap footer: -->

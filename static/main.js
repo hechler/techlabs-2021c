@@ -20,7 +20,7 @@ L.tileLayer(
 function moreInfo(e) {
     L.popup()
         .setLatLng(e.latlng)
-        .setContent("<h6>weitere Infos folgen</h6>")
+        .setContent("<h6>Weitere Infos folgen...</h6>")
         .openOn(mymap);
 }
 
