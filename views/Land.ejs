@@ -46,7 +46,10 @@
             <h1 id="headerOne">
                 <%= returnObject.country[0].name %>
             </h1>
-            <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
+            <div>
+                <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
+
+            </div>
         </div>
 
 
@@ -66,6 +69,10 @@
                                         <%= returnObject.country[0].currencies[0].name %>
                                             (<%= returnObject.country[0].currencies[0].symbol %>).
             </p>
+            <div id="apiPics">
+                <img src="<%= returnObject.picture.results[0].urls.small %>" alt="" class="pics" id="apiPicOne">
+                <img src="<%= returnObject.picture.results[4].urls.small %>" alt="" class="pics" id="apiPicTwo">
+            </div>
         </div>
         <a href="/" id="backToCard">Back to map</a>
     </div>

@@ -40,6 +40,16 @@ body {
     width: 15em;
 }
 
+.pics {
+    max-height: 12em;
+    max-width: 18em;
+    padding-bottom: 1em;
+}
+
+#apiPicTwo {
+    padding-left: 1em;
+}
+
 #countryHeader {
     margin: 1em;
     margin-left: 0;
@@ -140,10 +150,6 @@ body {
     margin-bottom: 0;
 }
 
-#backToCard {
-    color: #212529;
-}
-
 .nav-link {
     color: #ffffff !important;
 }
@@ -155,4 +161,8 @@ body {
 #paragraphFacts {
     font-size: 20px;
     margin-bottom: 1em;
+}
+
+#backToCard {
+    color: #212529;
 }

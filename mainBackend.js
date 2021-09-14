@@ -15,8 +15,9 @@ server.get('/', (req, res) => {
 
 server.get('/country/:name', async (req, res) => {
     let land = await fetch(`https://restcountries.eu/rest/v2/name/${req.params.name}`)
-    let reise = await fetch(`https://www.reisewarnung.net/api?country=${req.params.name}`)
-    let returnObject = { country: await land.json(), reise: await reise.json() }
+    let warnung = await fetch(`https://www.reisewarnung.net/api?country=${req.params.name}`)
+    let bild = await fetch(`https://api.unsplash.com/search/photos/?query=${req.params.name}&topics=nature&client_id=kxt-JhYM739fMDWvsvN1NQW_sUPo_Oz-7lK_tkVqcjg`)
+    let returnObject = { country: await land.json(), warning: await warnung.json(), picture: await bild.json() }
     res.render('Land', { returnObject })
 })
 
