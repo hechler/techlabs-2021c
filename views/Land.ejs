@@ -47,7 +47,7 @@
                 <%= returnObject.country[0].name %>
             </h1>
             <div>
-                <img src="<%= returnObject.country[0].flag %>" alt="" id="flag">
+                <img src="<%= returnObject.flag.results[2].urls.small %>" alt="" id="flag">
 
             </div>
         </div>
@@ -58,16 +58,8 @@
             </h3>
             <br>
             <p id="paragraphFacts">
-                <%= returnObject.country[0].name %> belongs to <%= returnObject.country[0].region %> and has a land area
-                        of
-                        over <%= returnObject.country[0].area %> square
-                            kilometers. <%= returnObject.country[0].population %> people live here, many of them
-                                in the capital <%= returnObject.country[0].capital %>. <%=
-                                        returnObject.country[0].languages[0].name %> is the national language and the
-                                        generally accepted currency
-                                        is
-                                        <%= returnObject.country[0].currencies[0].name %>
-                                            (<%= returnObject.country[0].currencies[0].symbol %>).
+                <%= returnObject.country[0].name %> belongs to <%= returnObject.country[0].region %> and the capital is
+                        called <%= returnObject.country[0].capital %>.
             </p>
             <div id="apiPics">
                 <img src="<%= returnObject.picture.results[0].urls.small %>" alt="" class="pics" id="apiPicOne">
